@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Parking Slot</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.booking-box{
+
+width:550px;
+
+background:rgba(255,255,255,0.15);
+
+backdrop-filter:blur(12px);
+
+padding:35px;
+
+border-radius:20px;
+
+color:white;
+
+box-shadow:0px 10px 30px rgba(0,0,0,0.5);
+
+}
+
+.logo{
+
+text-align:center;
+
+font-size:50px;
+
+color:#FFD54F;
+
+margin-bottom:10px;
+
+}
+
+.booking-box h2{
+
+text-align:center;
+
+margin-bottom:10px;
+
+}
+
+.booking-box p{
+
+text-align:center;
+
+margin-bottom:25px;
+
+color:#ddd;
+
+}
+
+.input-box{
+
+position:relative;
+
+margin-bottom:18px;
+
+}
+
+.input-box i{
+
+position:absolute;
+
+top:15px;
+
+left:15px;
+
+color:#555;
+
+}
+
+.input-box input,
+.input-box select{
+
+width:100%;
+
+padding:14px 14px 14px 45px;
+
+border:none;
+
+border-radius:8px;
+
+outline:none;
+
+font-size:15px;
+
+}
+
+.row{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.row .input-box{
+
+flex:1;
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+background:#1E88E5;
+
+color:white;
+
+font-size:18px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#1565C0;
+
+transform:scale(1.02);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="booking-box">
+
+<div class="logo">
+
+<i class="fa-solid fa-square-parking"></i>
+
+</div>
+
+<h2>Book Your Parking Slot</h2>
+
+<p>Reserve your parking space in advance.</p>
+
+<form>
+
+<div class="input-box">
+
+<i class="fa-solid fa-user"></i>
+
+<input type="text" placeholder="Full Name" required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-car"></i>
+
+<input type="text" placeholder="Vehicle Number" required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-car-side"></i>
+
+<select required>
+
+<option>Select Vehicle Type</option>
+
+<option>Bike</option>
+
+<option>Car</option>
+
+<option>Electric Car</option>
+
+<option>SUV</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<select required>
+
+<option>Select Parking Location</option>
+
+<option>Main Parking</option>
+
+<option>Visitor Parking</option>
+
+<option>Basement Parking</option>
+
+<option>Staff Parking</option>
+
+</select>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<input type="date" required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-clock"></i>
+
+<input type="time" required>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+
+<i class="fa-solid fa-clock"></i>
+
+<input type="time" required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-hourglass-half"></i>
+
+<select>
+
+<option>Parking Duration</option>
+
+<option>1 Hour</option>
+
+<option>2 Hours</option>
+
+<option>3 Hours</option>
+
+<option>4 Hours</option>
+
+<option>Full Day</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-square-parking"></i>
+
+<select required>
+
+<option>Select Parking Zone</option>
+
+<option>Zone A</option>
+
+<option>Zone B</option>
+
+<option>Zone C</option>
+
+<option>VIP Parking</option>
+
+</select>
+
+</div>
+
+<button type="button" onclick="window.location.href='slotselection.html'">
+
+<i class="fa-solid fa-arrow-right"></i>
+
+ Continue to Slot Selection
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

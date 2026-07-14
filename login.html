@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | Smart Parking Slot Reservation</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* Login Box */
+
+.login-box{
+
+    width:420px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    color:white;
+
+    box-shadow:0px 10px 30px rgba(0,0,0,0.5);
+
+}
+
+/* Title */
+
+.login-box h2{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#dddddd;
+
+}
+
+/* Input */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    left:15px;
+
+    top:15px;
+
+    color:#555;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:14px 14px 14px 45px;
+
+    border:none;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+/* Remember */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+}
+
+.options a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#1E88E5;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    background:#1565C0;
+
+}
+
+/* Register */
+
+.register{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.register a{
+
+    color:#FFD54F;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+/* Logo */
+
+.logo{
+
+    text-align:center;
+
+    font-size:50px;
+
+    margin-bottom:10px;
+
+    color:#FFD54F;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<div class="logo">
+
+<i class="fa-solid fa-square-parking"></i>
+
+</div>
+
+<h2>Welcome Back</h2>
+
+<p>Login to Smart Parking System</p>
+
+<form>
+
+<div class="input-box">
+
+<i class="fa-solid fa-user"></i>
+
+<input type="text" placeholder="Username" required>
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input type="password" placeholder="Password" required>
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="checkbox">
+
+Remember Me
+
+</label>
+
+<a href="#">Forgot Password?</a>
+
+</div>
+
+<button type="button" onclick="window.location.href='bookslot.html'">
+    Login
+</button>
+
+</form>
+
+<div class="register">
+
+Don't have an account?
+
+<a href="register.html">
+
+Register Now
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

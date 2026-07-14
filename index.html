@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Smart Parking Slot Reservation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#eef4fb;color:#222}
+header{position:sticky;top:0;background:#0b4ea2;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:16px 50px;z-index:10}
+.logo{font-size:28px;font-weight:700}
+nav a{color:#fff;text-decoration:none;margin-left:18px;padding:8px 14px;border-radius:20px;transition:.3s}
+nav a:hover{background:#fff;color:#0b4ea2}
+.hero{height:88vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1600&q=80') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero h1{font-size:52px}
+.hero p{margin:20px auto;max-width:700px;font-size:19px}
+.btn{display:inline-block;padding:14px 28px;background:#1e90ff;color:#fff;text-decoration:none;border-radius:30px;font-weight:600}
+.btn:hover{background:#1565c0}
+.stats,.features{max-width:1200px;margin:60px auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;padding:28px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.1);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card h3{color:#0b4ea2;margin-bottom:10px}
+.about{background:#fff;padding:70px 20px;text-align:center}
+.about h2,.features h2,.stats h2{color:#0b4ea2;margin-bottom:25px}
+.about p{max-width:900px;margin:auto;line-height:1.8}
+footer{background:#0b4ea2;color:#fff;padding:30px;text-align:center;margin-top:40px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo"> Smart Parking</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+<a href="bookslot.html">Book Slot</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Smart Parking Slot Reservation</h1>
+<p>Reserve your parking space online in seconds. Avoid traffic, reduce waiting time and enjoy a secure, smart parking experience.</p>
+<a class="btn" href="bookslot.html">Book Your Slot</a>
+</div>
+</section>
+
+<section class="stats">
+<h2 align="center">Project Highlights</h2>
+<div class="grid">
+<div class="card"><h3>500+</h3><p>Parking Slots</p></div>
+<div class="card"><h3>1000+</h3><p>Happy Users</p></div>
+<div class="card"><h3>24/7</h3><p>Support</p></div>
+<div class="card"><h3>99%</h3><p>Booking Success</p></div>
+</div>
+</section>
+
+<section class="features">
+<h2 align="center">Our Features</h2>
+<div class="grid">
+<div class="card"><h3>🚘 Easy Booking</h3><p>Reserve parking in just a few clicks.</p></div>
+<div class="card"><h3>📍 Live Availability</h3><p>See available parking slots instantly.</p></div>
+<div class="card"><h3>💳 Secure Payment</h3><p>Safe online payment and booking confirmation.</p></div>
+<div class="card"><h3>🔒 Safe Parking</h3><p>Well-managed and secure parking areas.</p></div>
+</div>
+</section>
+
+<section class="about">
+<h2>About Our Project</h2>
+<p>Smart Parking Slot Reservation is a web application that allows users to register, log in, check parking availability, reserve slots, and manage bookings efficiently. The system reduces congestion, saves fuel and time, and improves the overall parking experience.</p>
+</section>
+
+<footer>
+<p>© 2026 Smart Parking Slot Reservation | College Mini Project</p>
+</footer>
+</body>
+</html>
